@@ -15,12 +15,6 @@ const hot = new Handsontable(container, {
     const endCol = selection['0']['endCol'];
     const endRow = selection['0']['endRow'];
 
-    let width = endCol - startCol;
-    width = (width < 0) ? startCol - endCol : width;
-
-    let height = endRow - startRow;
-    height = (height < 0) ? startRow - endRow : height;
-
     hot.updateSettings({
       customBorders:[
         {
@@ -35,19 +29,19 @@ const hot = new Handsontable(container, {
             }
           },
           top: {
-            width: width,
+            width: 3,
             color: 'red'
           },
           bottom: {
-            width: width,
+            width: 3,
             color: 'red'
           },
           start: {
-            width: height,
+            width: 3,
             color: 'red'
           },
           end: {
-            width: height,
+            width: 3,
             color: 'red'
           }
         }
