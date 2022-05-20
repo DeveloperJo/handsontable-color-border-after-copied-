@@ -1,0 +1,1 @@
+# handsontable-color-border-after-copied-
